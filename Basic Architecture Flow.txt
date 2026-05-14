@@ -1,0 +1,66 @@
++--------------------------------------------------+
+|                  User / Engineer                 |
+|--------------------------------------------------|
+| Example Query:                                   |
+| "Analyze payment API latency issue"              |
++-------------------------+------------------------+
+                          |
+                          v
++--------------------------------------------------+
+|             Amazon Bedrock Agent                 |
+|--------------------------------------------------|
+| - Understands operational intent                 |
+| - Decides which action group to invoke           |
+| - Coordinates investigation workflow             |
++-------------------------+------------------------+
+                          |
+                          v
++--------------------------------------------------+
+|                Action Group                      |
+|--------------------------------------------------|
+| kibana_log_puller                                |
+| - Responsible for operational log retrieval      |
++-------------------------+------------------------+
+                          |
+                          v
++--------------------------------------------------+
+|                AWS Lambda Function               |
+|--------------------------------------------------|
+| - Executes backend operational logic             |
+| - Pulls logs from Kibana/OpenSearch              |
+| - Filters relevant telemetry                     |
+| - Returns structured operational events          |
++-------------------------+------------------------+
+                          |
+                          v
++--------------------------------------------------+
+|             Kibana / OpenSearch Logs             |
+|--------------------------------------------------|
+| - Application logs                               |
+| - API telemetry                                  |
+| - Error events                                   |
+| - Latency traces                                 |
+| - Correlation ID tracking                        |
++-------------------------+------------------------+
+                          |
+                          v
++--------------------------------------------------+
+|           AI-Powered RCA & Analysis              |
+|--------------------------------------------------|
+| Agent analyzes:                                  |
+| - Timeout patterns                               |
+| - Dependency failures                            |
+| - Database bottlenecks                           |
+| - Retry storms                                   |
+| - Latency anomalies                              |
++-------------------------+------------------------+
+                          |
+                          v
++--------------------------------------------------+
+|            Investigation Response                |
+|--------------------------------------------------|
+| - Incident summary                               |
+| - Root cause analysis                            |
+| - Supporting evidence                            |
+| - Recommended actions                            |
++--------------------------------------------------+
